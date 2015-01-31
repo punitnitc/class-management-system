@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  subcode: MyString
+  rollno: MyString
+  absent: 1
+
+two:
+  subcode: MyString
+  rollno: MyString
+  absent: 1

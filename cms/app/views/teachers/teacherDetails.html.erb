@@ -1,0 +1,89 @@
+<html>
+<head>
+<title>
+</title>
+</head>
+<body>
+<br><br>
+<html>
+<head>
+<title></title>
+<%= stylesheet_link_tag 'default.css' %>
+</head>
+<body>
+<div id="banner-wrapper"></div>
+<div id="header-wrapper">
+	<div id="header" class="container">
+		<div id="logo">
+			<h1><a href="#">Class Management System</a></h1>
+		</div>
+		<div id="menu">
+			<ul>
+				<li><a href="/students/index/" accesskey="1" title="">Homepage</a></li>
+				
+				<li><a href="/students/about/" accesskey="2" title="">About Us</a></li>
+				
+				<li><a href="/students/contact/" accesskey="3" title="">Contact Us</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div id="page" class="container">
+	<div id="content">
+		<div class="post">
+			<h2 class="title"> Welcome to Class Management System </h2>
+			<p class="meta"><span class="date">April 15, 2014</span><span class="posted">Created by <a href="/students/about/"> WebPGroup </a></span></p>
+			<div style="clear: both;">&nbsp;</div>
+			<div class="entry">
+				<table style="width:500px " border=1 align="center" >
+					<tr>
+  						<th>Teacher Name</th>
+  						<th>Teacher Email</th>		
+  						<th>Teacher Mobile No</th>
+  					</tr>
+					<% for teacher in @teachers %>
+						<tr>
+    						<td> <%= teacher.fname %>&nbsp
+								<%= teacher.lname %></td>
+    						<td><%= teacher.email %></td>
+    						<td><%= teacher.mob %></li></td>
+						</tr>
+					<% end %>
+				</table>
+			</div>
+		</div>
+	
+	
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	<!-- end #content -->
+	<div id="sidebar">
+		<ul>
+			<li>
+				<h3 style="color:white"> Welcome student </h3><br>
+				<ul>
+
+					<nav class="cl-effect-16">
+					<a  href="/teachers/teacherDetails/" style="font-size:17px;"  data-hover="Check Teacher Details "> Check Teacher Details </a>
+					<a href="/students/studentAttendance/" style="font-size:17px;" data-hover="Show Attendance"> Show Attendance </a>
+					<li><a href="/students/index/" style="font-size:15px;color:yellow" data-hover = "Logout" > Logout </a></li>
+					</nav>
+
+
+					
+
+				</ul>
+			</li>
+		
+			
+		</ul>
+	</div>
+	<!-- end #sidebar -->
+</div>
+<div id="footer" class="container">
+	<p>Copyright (c) 2014 CMS.com. All rights reserved. Design by <a><a href= "https://www.facebook.com/profile.php?id=100004086293066&fref=ts">Vikas Kumar Singh</a>,<a><a href = "https://www.facebook.com/punitnitc?fref=ts"> Punit kumar singh</a> and  <a> <a href = "https://www.facebook.com/hi.user.watsup?fref=ts"> Niranjan Singh </a>.</p>
+</div>
+</body>
+</html>
+</body>
+</html>

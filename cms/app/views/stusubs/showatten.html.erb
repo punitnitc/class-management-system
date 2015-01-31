@@ -1,0 +1,18 @@
+<html>
+<head>
+<title>
+</title>
+</head>
+<body>
+<% for subject in @stusub %>
+<ol>
+ <li>subject:<%= subject.subname %>
+<br>Subject_code:<%= subject.subcode %>
+ <br>Present:<%= subject.totalclass-subject.absent %></li>
+ <br>Total:<%= subject.totalclass %>
+ <br>Percentage:<%= (subject.totalclass-subject.absent)*100/subject.totalclass %>
+<br>
+</ol>
+<% end %>
+</body>
+</html>

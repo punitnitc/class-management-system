@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>
+</title>
+<body>
+<% @i=0 %>
+<% @j=0 %>
+<% for subject in @subject %>
+<% if @subject[@i].subcode == session[:subcode] %>
+        <% @subject[@i].totalclass=@subject[@i].totalclass+1 %>
+		<%= @subject[@i].totalclass %>
+ <% end %>
+ <% @i= @i+1 %>
+<% end %>
+ <% for ss in @stuSub %>
+    <% if @stuSub[@j].rollno== params[:rollno] %>
+		      <% if @stuSub[@j].subcode== session[:subcode] %>
+                   <%= params[:rollno] %>
+                   <% @stuSub[@j].absent=@stuSub[@j].absent+1 %>
+				   <%= @stuSub[@j].absent %>
+			   <% end %>
+    <% end %>
+<% @j= @j+1 %>
+ <% end %>
+
+ </body>
+ </html>

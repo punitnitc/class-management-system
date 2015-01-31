@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  id: MyString
+  pwd: MyString
+  fname: MyString
+  lname: MyString
+  email: MyString
+  mob: 1
+
+two:
+  id: MyString
+  pwd: MyString
+  fname: MyString
+  lname: MyString
+  email: MyString
+  mob: 1

@@ -1,0 +1,23 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  fname: MyString
+  lname: MyString
+  rollno: MyString
+  course: MyString
+  branch: MyString
+  sem: MyString
+  year: 1
+  email: MyString
+  mob: 1
+
+two:
+  fname: MyString
+  lname: MyString
+  rollno: MyString
+  course: MyString
+  branch: MyString
+  sem: MyString
+  year: 1
+  email: MyString
+  mob: 1

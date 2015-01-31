@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  subname: MyString
+  subcode: MyString
+  totalclass: 1
+
+two:
+  subname: MyString
+  subcode: MyString
+  totalclass: 1
